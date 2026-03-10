@@ -188,10 +188,10 @@ FastLED 3.9.5+ has a known bug on ESP32-C3 when using multiple LED strips:
 
 ### 3. Upload & Test
 
-1. Connect ESP32 C3 Mini via USB
+1. Connect ESP32 C3 Mini via 9600USB
 2. Select correct COM port
 3. Upload code (Ctrl+U)
-4. Open Serial Monitor (115200 baud)
+4. Open Serial Monitor ( baud)
 5. Type `help` for command list
 6. LEDs should flash blue on startup
 
@@ -210,7 +210,7 @@ FastLED 3.9.5+ has a known bug on ESP32-C3 when using multiple LED strips:
 | Button 5 (IO4) | Change Brightness (5 levels) | - |
 | Button 6 (IO5) | Toggle Mode (Animation ↔ Simon Game) | Save Settings to EEPROM |
 
-### 2. Serial Monitor Control (115200 baud)
+### 2. Serial Monitor Control (9600 baud)
 
 Open Serial Monitor in Arduino IDE, set line ending to "Newline".
 
@@ -402,7 +402,7 @@ Settings are automatically loaded on boot from EEPROM:
 
 ### Serial Commands Not Working
 
-- ✅ Set baud rate to **115200**
+- ✅ Set baud rate to **9600**
 - ✅ Set line ending to **"Newline"** (not "No line ending")
 - ✅ Check USB cable (some cables are charge-only)
 - ✅ Verify correct COM port selected
@@ -444,7 +444,7 @@ Settings are automatically loaded on boot from EEPROM:
 | CSL Panel LEDs | 36 |
 | LDPL Panel LEDs | 43 |
 | Control Buttons | 6 |
-| Serial Baud Rate | 115200 |
+| Serial Baud Rate | 9600 |
 | CLI Commands | 12 (help, status, config, anim, speed, bright, color, rgb, power, mode, save, reset) |
 | Color Modes | 18 (1 multi + 16 palette + 1 custom RGB) |
 | Animations | 7 |
