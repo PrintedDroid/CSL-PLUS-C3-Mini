@@ -106,7 +106,7 @@
 // ================================================================================
 // SERIAL MONITOR CONTROLS:
 // 1. Open the Serial Monitor in the Arduino IDE.
-// 2. Set the baud rate to 115200.
+// 2. Set the baud rate to 9600.
 // 3. Set the line ending to "Newline".
 // 4. Type 'help' and press Enter to see all available commands.
 //
@@ -241,7 +241,7 @@ void setup() {
   // and LOW when the switch is closed (connected to GND).
   pinMode(KILL_SWITCH_PIN, INPUT_PULLUP);
 
-  Serial.begin(115200);
+  Serial.begin(9600);
   delay(2000);
   Serial.println("CSL+ v2.5 Initialized. Type 'help' for commands.");
 
@@ -846,3 +846,4 @@ int getButtonPressed() {
   }
   return -1;
 }
+
